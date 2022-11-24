@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/babackkh/learning-coypress-tutorial/issues"
   },
-  "homepage": "https://github.com/babackkh/learning-coypress-tutorial#readme"
+  "homepage": "https://github.com/babackkh/learning-coypress-tutorial#readme",
+  "devDependencies": {
+    "cypress": "^11.2.0"
+  }
 }
