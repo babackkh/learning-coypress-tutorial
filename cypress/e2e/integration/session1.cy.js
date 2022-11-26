@@ -1,12 +1,13 @@
 /// <reference types="cypress"/>
 
-it("Should Search Google", () => {
-  cy.visit("https://google.com/");
-  cy.get(".gLFyf").type("Cypress Documentation{enter}");
-});
+describe('Testing DOM for Text', () => {
+  it("Should Search Google", () => {
+    cy.visit("https://google.com/");
+    cy.get(".gLFyf").type("Cypress Documentation{enter}");
+  });
 
-it("Should Check Cypress Website Title", () => {
-  cy.visit("https://cypress.io");
-  //cy.get('title').should("eq", 'JavaScript End to End Testing Framework | cypress.io testing tools');
-  cy.get('[data-cy="tag-line"] > div').should('contain', 'The web has evolved.Finally, testing has too.')
+  it("Should Check Github Type Challenges url", () => {
+    cy.visit("https://github.com/type-challenges/type-challenges");
+    cy.get('.url').should('have.text', 'type-challenges')
+  });
 });
